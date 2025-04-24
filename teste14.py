@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="Dados SUS - Procedimentos")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('C:/Users/Victor/Desktop/PEGA/testes/cidades_e_procedimentos.csv', header=0)
+    return pd.read_csv('cidades_e_procedimentos.csv', header=0)
 
 # Carrega os dados com cache
 dados_sus = load_data()
